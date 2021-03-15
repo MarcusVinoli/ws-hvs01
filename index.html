@@ -39,12 +39,66 @@
             <button class = "generic-button button-know-more">Lorem ipsum!</button>
         </div>
     </div>
+
+    <div style="height: 1000px;">
+        
+    </div>
+
+    <div class = "bottom-banner-space">
+        <div class = "bottom-banner-menu">
+            <h1>MENU</h1>
+            <a>Novidades</a>
+            <a>Portifólio</a>
+            <a>Suporte</a>
+            <a>Carreiras</a>
+            <a>Downloads</a>
+        </div>
+
+        <div class="bottom-banner-contact">
+            <h1>CONTATE-NOS</h1>
+            <div class="contact-content">
+                <table style="border: none;">
+                    <tr>
+                        <td><img src="./img/icons/hvsd-email-icon.png" alt = "icon-email" style="padding-right: 10px;"></td>
+                        <td><p>hello@heaviside.com.br</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/icons/hvsd-telephone-icon.png" alt = "icon-telephone" style="padding-right: 10px;"></td>
+                        <td><p>+55 62 0000-0000</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/icons/hvsd-place-icon.png" alt = "icon-address" style="padding-right: 10px;"></td>
+                        <td><p>Blvd. Broken Dreams, nº 17<br>Heaviside Head-Quarter<br>Goiânia - GO - Brasil</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="bottom-banner-social">
+            <h1>MÍDIAS SOCIAIS</h1>
+            <div class = "social-content">
+                <div class = "social-icons">
+                    <a><img src="./img/icons/social-tt.png" class = "social-media-icons"alt = "social-icon-tt"></a>
+                    <a><img src="./img/icons/social-fb.png" class = "social-media-icons"alt = "social-icon-fb"></a>
+                    <a><img src="./img/icons/social-ig.png" class = "social-media-icons"alt = "social-icon-ig"></a>
+                    <a><img src="./img/icons/social-gthb.png" class = "social-media-icons"alt = "social-icon-gthb"></a>
+                    <a><img src="./img/icons/social-yt.png" class = "social-media-icons"alt = "social-icon-gthb"></a>
+                </div>
+                <div>
+                    <p>@heaviside</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class = "copyright-bar">
+        (C) Copyright 2021 - Heaviside LTDA. Todos os Direitos Reservados. Feito com amor pela Heaviside UX Labs
+    </div>
 </body>
 
 <script>
     $(function () {
         $(document).scroll(function () {
-            console.log("Get here");
             var $nav = $(".nav-bar-space");
             $nav.toggleClass('scolled-nav-bar', $(this).scrollTop() > $nav.height());
             var $logo = $("#nav-bar-hvsd-logo");

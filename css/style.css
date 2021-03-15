@@ -15,7 +15,8 @@ a {
 
 .nav-bar-space {
     height: 65px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
     display: block;
     position: fixed;
     top: 0;
@@ -25,14 +26,17 @@ a {
     background-color: #FFFFFF !important;
     color: #000000;
     transition: background-color 200ms cubic-bezier(.83,.06,1,1);
+    transition: padding-top 200ms ease-in-out;
 }
 
 .nav-bar-space.scolled-nav-bar {
-    padding-bottom: 0;
+    padding-top: 0px;
+    margin-bottom: 0px;
     background-color: #010101 !important;
-    height: 85px;
+    height: 60px;
     color: #FFFFFF;
-    transition: background-color 300ms cubic-bezier(.83,.06,1,1);
+    transition: background-color 200ms cubic-bezier(.83,.06,1,1);
+    transition: padding-top 200ms ease-in-out;
 }
 
 .nav-bar {
@@ -44,7 +48,6 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
 }
 
 .nav-bar-logo {
@@ -71,6 +74,7 @@ a {
 
 .nav-bar-list-element:hover {
     line-height: 55px;
+    transition: line-height 50ms cubic-bezier(.83,.06,1,1);
 }
 
 .page-content {
@@ -99,4 +103,96 @@ a {
     border-radius: 18px;
     border-style: none;
     cursor: pointer;
+}
+
+.bottom-banner-space {
+    height: 280px;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.bottom-banner-space h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #979797;
+}
+
+.bottom-banner-menu {
+    margin-left: 60px;
+    width: 20%;
+    margin-right: 30px;
+}
+
+.bottom-banner-contact {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.bottom-banner-contact p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.bottom-banner-menu a {
+    display: block;
+    line-height: 30px;
+    transition: padding-left 50ms ease-in;
+}
+
+.bottom-banner-menu a:hover {
+    padding-left: 5px
+}
+
+.bottom-banner-social {
+    width: 30%;
+    padding-right: 60px;
+}
+
+.social-media-icons {
+    width: 20px;
+}
+
+.contact-content{
+    display: flex;
+    position: relative;
+}
+
+.contact-content table {
+    width: 50%;
+}
+
+.contact-content div {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.social-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-placeholder{
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-content p {
+    margin: 0;
+    padding-left: 8px;
+    margin-left: 10px;
+    border-left: solid 2px #FFFFFF;
+}
+
+.copyright-bar {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 11px;
+    background-color: #010101;
+    padding-bottom: 4px;
 }
